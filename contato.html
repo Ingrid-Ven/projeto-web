@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+</head>
+<body>
+
+  <h1>Entre em Contato</h1>
+
+  <img src="https://via.placeholder.com/150" alt="Foto de perfil" width="150">
+  <!-- img = exibe uma imagem.
+       src = caminho ou URL da imagem (source = fonte).
+       alt = texto alternativo: aparece se a imagem não carregar e é
+             lido por leitores de tela. NUNCA omita o alt — é acessibilidade.
+       Importante: <img> não tem tag de fechamento. É uma "void element" —
+       elementos que não têm conteúdo entre abertura e fechamento. -->
+
+  <h2>Envie uma mensagem</h2>
+
+  <form>
+    <!-- form = formulário. Agrupa campos de entrada de dados.
+         Voltaremos a ele com muito mais detalhe na Aula 04. -->
+
+    <label for="nome">Seu nome:</label>
+    <!-- label = rótulo descritivo de um campo.
+         O atributo "for" deve ser idêntico ao "id" do input que descreve.
+         Com isso, clicar no rótulo move o foco para o campo — acessibilidade. -->
+    <br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+    <!-- input = campo de entrada. Não tem tag de fechamento (void element).
+         type="text" = texto de uma linha.
+         placeholder = texto de dica que desaparece ao digitar. -->
+    <br><br>
+
+    <label for="email">Seu e-mail:</label>
+    <br>
+    <input type="email" id="email" name="email" placeholder="seu@email.com">
+    <!-- type="email" = o navegador valida se o formato é de e-mail válido
+         antes de permitir o envio do formulário. Validação automática! -->
+    <br><br>
+
+    <label for="mensagem">Mensagem:</label>
+    <br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="40"
+              placeholder="Escreva aqui..."></textarea>
+    <!-- textarea = área de texto de múltiplas linhas.
+         Diferente do input, textarea TEM tag de fechamento.
+         rows e cols definem o tamanho visual inicial. -->
+    <br><br>
+
+    <button type="submit">Enviar Mensagem</button>
+    <!-- button type="submit" = envia o formulário ao servidor.
+         Ainda não temos back-end para receber os dados (isso vem na Aula 04),
+         mas a estrutura já está correta. -->
+  </form>
+
+</body>
+</html>
