@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento de Aplicações com Flask</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1f2937;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        code {
+            background-color: #e5e7eb;
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #111827;
+            color: #38bdf8;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Desenvolvimento de Aplicações com Flask</h1>
+    <p>Framework leve e poderoso para aplicações web em Python</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#vantagens">Vantagens</a>
+    <a href="#estrutura">Estrutura</a>
+    <a href="#exemplo">Exemplo</a>
+</nav>
+
+<div class="container">
+
+    <section id="sobre" class="card">
+        <h2>O que é Flask?</h2>
+        <p>
+            Flask é um microframework web escrito em Python. Ele é leve, simples e flexível,
+            permitindo que desenvolvedores criem aplicações web rapidamente.
+        </p>
+        <p>
+            Diferente de frameworks mais robustos, o Flask oferece apenas o essencial,
+            dando liberdade para o desenvolvedor escolher as bibliotecas que deseja utilizar.
+        </p>
+    </section>
+
+    <section id="vantagens" class="card">
+        <h2>Principais Vantagens</h2>
+        <ul>
+            <li>✔ Fácil de aprender</li>
+            <li>✔ Estrutura simples e organizada</li>
+            <li>✔ Ideal para APIs REST</li>
+            <li>✔ Alta flexibilidade</li>
+            <li>✔ Grande comunidade</li>
+        </ul>
+    </section>
+
+    <section id="estrutura" class="card">
+        <h2>Estrutura Básica de um Projeto</h2>
+        <p>Um projeto simples em Flask pode ter a seguinte estrutura:</p>
+        <pre>
+/meu_projeto
+│
+├── app.py
+├── templates/
+│     └── index.html
+└── static/
+      └── style.css
+        </pre>
+        <p>
+            O arquivo principal normalmente é o <code>app.py</code>,
+            onde definimos as rotas e configurações da aplicação.
+        </p>
+    </section>
+
+    <section id="exemplo" class="card">
+        <h2>Exemplo de Aplicação Flask</h2>
+        <p>Exemplo simples de código em Python:</p>
+
+        <pre>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Olá, mundo com Flask!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+        </pre>
+
+        <a href="#" class="btn">Saiba Mais</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 - Página Educacional sobre Flask | Desenvolvido para fins acadêmicos</p>
+</footer>
+
+</body>
+</html>
